@@ -19,20 +19,30 @@ body {
 
 .navbar ul {
   display: flex;
+  flex: 1;
   flex-direction: row;
+  justify-content: flex-start;
+  list-style: none;
 }
 
 .li-nav {
   display: flex;
   margin: 0 10px;
-  flex: 0 0 auto;
+  flex: 1;
   align-items: center;
   justify-content: center;
 }
 
-.navbar ul:nth-child(2){
-  justify-content: flex-end;
+.li-nav i {
+  margin: 10px;
+}
 
+.li-nav ul {
+  justify-content: center;
+}
+
+.nav-menu{
+  margin: 0px 10px;
 }
 
 section {
