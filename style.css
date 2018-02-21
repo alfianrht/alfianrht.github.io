@@ -54,7 +54,7 @@ body {
   display: flex;
   flex-direction: row;
   list-style: none;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .header-item{
@@ -62,29 +62,34 @@ body {
   flex-direction: row;
   flex: 1;
   border: 1px solid #FFC719;
-  margin: 20px;
+  /* margin: 20px; */
+}
+
+.header-item:nth-child(1){
   padding: 100px 0px;
   justify-content: center;
 }
 
 .header-item ul {
   flex: 1;
-  align-items: center;
+  flex-direction: row;
   justify-content: center;
   flex-direction: column;
 }
 
 .item-text2:nth-child(2) ul{
   display: flex;
+  flex-direction: row;
 }
 
 .item-text2:nth-child(2) ul li{
   flex: 1;
-  flex-direction: row;
+  flex-direction: column;
 }
 
 .item-text{
   background-color: #FFC719;
+  width: 60%;
   display: table;
 }
 
