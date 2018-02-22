@@ -89,11 +89,6 @@ body {
   border: 1px solid #FFC719;
 }
 
-.header-item ul {
-  flex: 1;
-  flex-direction: row;
-}
-
 .header-item:nth-child(1){
   padding: 100px 0px;
   justify-content: center;
@@ -118,7 +113,7 @@ body {
 }
 
 .corner-img{
-  height: 40%;
+  height: 200px;
   width: auto;
   position:absolute; 
   right:0; 
