@@ -3,6 +3,7 @@
     padding: 0;
     margin: 0;
     color: #FFC719;
+    text-decoration: none;
 }
 
 body {
@@ -32,18 +33,24 @@ body {
   flex: 1;
   align-items: center;
   justify-content: center;
+  font-size: 1.5em;
 }
 
 .li-nav i {
   margin: 10px;
 }
 
-.li-nav ul {
+.li-nav ul, .li-nav p {
   justify-content: center;
+  font-weight: 400;
 }
 
 .nav-menu{
   margin: 0px 10px;
+}
+
+.nav-menu a, .fa {
+  color: #FFFFFF;
 }
 
 .header{
@@ -65,9 +72,8 @@ body {
 }
 
 .header-item ul {
-  flex: 1 auto;
+  flex: 1;
   flex-direction: row;
-  justify-content: center;
 }
 
 .header-item:nth-child(1){
@@ -75,51 +81,22 @@ body {
   justify-content: center;
 }
 
-.header-item:nth-child(2){
-  padding: 30px;
-}
-
-.header-item:nth-child(2) ul{
-  flex-direction: column;
-}
-
-.item-text2{
-  display: flex;
-  flex: 1 1 auto;
-  border: 1px solid #FFC719;
-}
-
-.item-text2:nth-child(2) ul{
-  display: flex;
-  flex-direction: row;
-  flex: auto;
-}
-
-.item-text2:nth-child(2) ul li{
-  padding: 20px;
-}
-
-.item-text2:nth-child(2) ul li h1{
-  color: #FFFFFF;
-}
-
-.item-text2:nth-child(3) i{
-  color: #FFFFFF;
-  justify-content: center;
-}
-
-.item-text{
+.header-item:nth-child(1) div{
   background-color: #FFC719;
   width: 60%;
   display: table;
 }
 
-.item-text h1{
+.header-item:nth-child(1) div h1{
   color: #FFFFFF;
   z-index: 1;
   font-weight: 1000;
   margin: -65px 0 0 -20px;
   font-size: 7em;
+}
+
+.github-icon {
+  font-size: 5em;
 }
 
 .corner-img{
