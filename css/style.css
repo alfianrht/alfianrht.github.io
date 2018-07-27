@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0px;
+  text-decoration: none; }
+
+.container {
+  display: grid;
+  grid-template-rows: 72px 1fr 330px; }
+
+.navbar {
+  padding: 0px 80px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  background-color: #FFFFFF; }
+  .navbar .brand {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+    font-size: 24px;
+    letter-spacing: 0.1em;
+    color: #FF5549; }
+  .navbar .nav-item {
+    display: grid;
+    justify-items: center; }
+    .navbar .nav-item ul {
+      display: flex;
+      flex-direction: row; }
+      .navbar .nav-item ul li {
+        padding: 0px 15px;
+        list-style: none;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        font-size: 18px;
+        text-align: center;
+        letter-spacing: 0.1em;
+        color: #ADADAD;
+        cursor: pointer; }
+        .navbar .nav-item ul li:hover {
+          color: #2A1655;
+          transition: 0.5s; }
+  .navbar .nav-btn {
+    display: grid;
+    justify-items: end; }
+    .navbar .nav-btn .cv-btn {
+      width: 160px;
+      height: 40px;
+      border-radius: 4px;
+      background-color: #2A1655;
+      text-align: center;
+      line-height: 40px;
+      color: #FFFFFF;
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      text-align: center; }
+
+.content {
+  display: grid;
+  grid-template-rows: auto auto; }
+  .content .landing {
+    display: grid;
+    grid-template-columns: 1fr 1fr; }
+    .content .landing .identity {
+      align-self: center;
+      padding-left: 80px; }
+      .content .landing .identity h1 {
+        font-family: Helvetica;
+        font-style: normal;
+        font-weight: bold;
+        line-height: normal;
+        font-size: 72px;
+        color: #2A1655; }
+      .content .landing .identity p {
+        font-family: Helvetica;
+        font-style: normal;
+        font-weight: 450;
+        line-height: 34px;
+        font-size: 18px;
+        color: #2A1655; }
+    .content .landing .img {
+      display: grid;
+      justify-items: end;
+      position: relative;
+      top: 70px; }
+    .content .landing .btn .btn-resume {
+      margin-top: 30px;
+      width: 160px;
+      height: 40px;
+      border-radius: 4px;
+      background-color: #2A1655;
+      text-align: center;
+      line-height: 40px;
+      color: #FFFFFF;
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      text-align: center; }
+
+.footer {
+  background-color: #2A1655; }
+
+/*# sourceMappingURL=style.css.map */
