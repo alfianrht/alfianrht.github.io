@@ -28,7 +28,7 @@
     .parent .navbar img {
       visibility: hidden; }
 
-@media (max-width: 400px) {
+@media (max-width: 420px) {
   .parent {
     position: fixed; }
     .parent .navbar {
@@ -153,9 +153,9 @@
         margin: 5px 20px;
         color: #FFFFFF; }
 
-@media (max-width: 400px) {
+@media (max-width: 420px) {
   .content {
-    margin-top: 100px; }
+    margin-top: 150px; }
     .content .landing {
       padding: 0px 40px; }
       .content .landing .identity {
@@ -185,7 +185,24 @@
         width: auto;
         position: absolute;
         right: 0;
-        top: 430px; } }
+        top: 430px; }
+    .content .all {
+      position: relative;
+      margin: 10px 0px 160px 0px;
+      display: flex;
+      flex: 1 1 auto;
+      flex-flow: row wrap;
+      padding: 0px 160px;
+      align-self: center;
+      justify-content: center; }
+      .content .all[name="landing-page"] {
+        margin: -10px 0px 160px 0px; }
+        .content .all[name="landing-page"] .contact-list {
+          background-color: #2A1655;
+          margin: 10px;
+          padding: 20px 40px;
+          border-radius: 4px;
+          color: #FFFFFF; } }
 .footer {
   display: flex;
   flex: 1;
@@ -214,7 +231,7 @@
   .footer .credits p {
     color: #FFFFFF; }
 
-@media (max-width: 400px) {
+@media (max-width: 420px) {
   .footer {
     height: 500px; }
     .footer .footer-content {
