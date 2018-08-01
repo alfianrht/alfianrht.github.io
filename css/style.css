@@ -32,15 +32,19 @@
   .parent {
     position: fixed; }
     .parent .navbar {
-      padding: 0px 40px; }
+      padding: 0px 0px;
+      justify-content: center;
+      align-content: center;
+      flex-direction: column; }
       .parent .navbar .nav-item {
-        visibility: hidden; }
+        margin: 0px;
+        display: flex; }
       .parent .navbar img {
         visibility: visible; } }
 .content {
-  margin-top: 40px; }
+  margin-top: 160px; }
   .content .about-land {
-    margin-top: 100px; }
+    margin-top: 0px; }
   .content .landing {
     padding: 0px 80px;
     min-height: 592px;
@@ -224,14 +228,14 @@
           color: #FFFFFF; } }
 .footer {
   display: flex;
-  flex: 1;
+  flex: 1 1 300px;
   flex-direction: column;
-  padding: 0px 80px;
-  height: 280px;
+  padding: 40px 40px;
   background-color: #2A1655; }
   .footer .footer-content {
     display: flex;
-    flex: 1; }
+    flex: 1;
+    justify-content: space-between; }
     .footer .footer-content .resume {
       color: #FF5549; }
     .footer .footer-content li {
