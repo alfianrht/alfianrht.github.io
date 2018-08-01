@@ -66,6 +66,7 @@
         flex-direction: column;
         padding: 40px 40px;
         background-color: $dark-purple;
+        // align-items: center;
     
         .footer-content {
             display: flex;
@@ -106,7 +107,9 @@
             }
         }
         .credits {
-    
+            align-self: center;
+            margin-top: 40px;
+            
             p {
                 color: $red;
     
