@@ -180,13 +180,47 @@
     }
 }
 
-@media (max-width: 420px) {
+@media (max-width: 500px) {
 
     .content {
-        margin-top: 150px;
+        margin-top: 140px;
+        
+        .about-land {
+            margin-top: 10px;
+        }
         
         .landing {
             padding: 0px 40px;
+
+            &[name="landing-page"] {
+                min-height: 250px;
+    
+                .identity {
+                    // align-content: center;
+                    margin-top: 0px;
+                    margin-right: auto;        
+                    margin-left: auto;
+        
+                    img {
+                        // margin-top: 100px;
+                        align-self: center;
+                        width: 150px;
+                        height: auto;
+                    }
+                    a {
+                        align-self: center;
+    
+                        &[name="my-resume"] {
+                            margin-bottom: 50px;
+                        }
+                    }
+    
+                    img, h1, h2, h3, h4, p {
+                        margin: 10px 0px;
+                        text-align: center;
+                    }
+                }
+            }    
     
             .identity {
                 display: flex;
@@ -233,14 +267,14 @@
                     width: auto;
                     position: absolute;
                     right: 0;
-                    top: 430px;
+                    top: 400px;
                 }
             }
         }
 
         .all {
             position: relative;
-            margin: 10px 0px 160px 0px;
+            margin: 0px 0px 160px 0px;
             display: flex;
             flex: 1 1 auto;
             flex-flow: row wrap;

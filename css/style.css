@@ -28,7 +28,7 @@
     .parent .navbar img {
       visibility: hidden; }
 
-@media (max-width: 420px) {
+@media (max-width: 500px) {
   .parent {
     position: fixed; }
     .parent .navbar {
@@ -153,11 +153,30 @@
         margin: 5px 20px;
         color: #FFFFFF; }
 
-@media (max-width: 420px) {
+@media (max-width: 500px) {
   .content {
-    margin-top: 150px; }
+    margin-top: 140px; }
+    .content .about-land {
+      margin-top: 10px; }
     .content .landing {
       padding: 0px 40px; }
+      .content .landing[name="landing-page"] {
+        min-height: 250px; }
+        .content .landing[name="landing-page"] .identity {
+          margin-top: 0px;
+          margin-right: auto;
+          margin-left: auto; }
+          .content .landing[name="landing-page"] .identity img {
+            align-self: center;
+            width: 150px;
+            height: auto; }
+          .content .landing[name="landing-page"] .identity a {
+            align-self: center; }
+            .content .landing[name="landing-page"] .identity a[name="my-resume"] {
+              margin-bottom: 50px; }
+          .content .landing[name="landing-page"] .identity img, .content .landing[name="landing-page"] .identity h1, .content .landing[name="landing-page"] .identity h2, .content .landing[name="landing-page"] .identity h3, .content .landing[name="landing-page"] .identity h4, .content .landing[name="landing-page"] .identity p {
+            margin: 10px 0px;
+            text-align: center; }
       .content .landing .identity {
         display: flex;
         flex-direction: column; }
@@ -185,10 +204,10 @@
         width: auto;
         position: absolute;
         right: 0;
-        top: 430px; }
+        top: 400px; }
     .content .all {
       position: relative;
-      margin: 10px 0px 160px 0px;
+      margin: 0px 0px 160px 0px;
       display: flex;
       flex: 1 1 auto;
       flex-flow: row wrap;
@@ -231,12 +250,35 @@
   .footer .credits p {
     color: #FFFFFF; }
 
-@media (max-width: 420px) {
+@media (max-width: 500px) {
   .footer {
-    height: 500px; }
+    display: flex;
+    flex: 1 1 600px;
+    flex-direction: column;
+    padding: 40px 40px;
+    background-color: #2A1655; }
     .footer .footer-content {
-      flex-direction: column;
-      margin: 10px; } }
+      display: flex;
+      flex: 1;
+      flex-direction: column; }
+      .footer .footer-content .resume {
+        margin-top: -40px;
+        color: #FF5549;
+        font-weight: 700; }
+      .footer .footer-content li {
+        margin: 10px 0px;
+        display: flex;
+        flex-direction: column; }
+        .footer .footer-content li a, .footer .footer-content li p, .footer .footer-content li h3 {
+          color: #FFFFFF; }
+        .footer .footer-content li:nth-child(1) {
+          max-width: 300px; }
+          .footer .footer-content li:nth-child(1) p {
+            margin-bottom: 40px; }
+        .footer .footer-content li:nth-child(2) h3, .footer .footer-content li:nth-child(3) h3 {
+          margin-bottom: 16px; }
+    .footer .credits p {
+      color: #FF5549; } }
 * {
   margin: 0;
   padding: 0;
@@ -250,7 +292,6 @@
 .container {
   display: flex;
   flex: 1;
-  width: 100%;
   flex-direction: column; }
 
 /*# sourceMappingURL=style.css.map */
