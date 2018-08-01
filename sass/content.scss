@@ -1,0 +1,241 @@
+
+.content {
+    margin-top: 40px;
+    
+    .about-land {
+        margin-top: 100px;
+    }
+
+    .landing {
+        padding: 0px 80px;
+        min-height: 592px;
+        display: flex;
+        // align-items: center;
+
+        &[name="landing-page"] {
+            min-height: 400px;
+
+            .identity {
+                // align-content: center;
+                margin-top: 0px;
+                margin-right: auto;        
+                margin-left: auto;
+    
+                img {
+                    // margin-top: 100px;
+                    align-self: center;
+                    width: 150px;
+                    height: auto;
+                }
+                a {
+                    align-self: center;
+
+                    &[name="my-resume"] {
+                        margin-bottom: 30px;
+                    }
+                }
+
+                img, h1, h2, h3, h4, p {
+                    margin: 10px 0px;
+                    text-align: center;
+                }
+            }
+        }
+
+        .identity {
+            display: flex;
+            flex-direction: column;
+
+            h1 {
+                font-size: 64px;
+                color: $dark-purple;
+                // margin-bottom: 10px;
+            }
+
+            h2, h3, h4 {
+                color: $dark-purple;
+            }
+
+            p {
+                max-width: 500px;
+                font-weight: 450;
+                font-size: 18px;
+                color: $dark-purple;
+                margin-bottom: 15px;
+                line-height: 1.5rem;
+            
+            }
+            
+            .desc {
+                max-width: 600px;
+                color: grey;
+
+            }
+
+            a {
+                // flex: 1 0 auto;
+                // padding: 20px 40px;
+                color: $red;
+                font-weight: 500;
+                border-radius: 4px;
+                // background-color: $dark-purple;
+            }
+        }
+
+        .img-landing {
+            img {
+                position: absolute;
+                right: 0;
+                top: 224px;
+            }
+        }
+    }
+
+    .all {
+        position: relative;
+        margin: 160px 0px;
+        display: flex;
+        flex: 1 1 auto;
+        flex-flow: row wrap;
+        padding: 0px 160px;
+        align-self: center;
+        justify-content: center;
+
+        &[name="landing-page"] {
+          margin: -10px 0px 160px 0px;
+
+          .contact-list {
+              background-color: #2A1655;
+              margin: 10px;
+              padding: 20px 40px;
+              border-radius: 4px;
+              color: $white;
+          }
+        }
+
+        .circle-right {
+            position: absolute;
+            z-index: -10;
+            right: 0;
+            top: 924px;
+        }
+
+        .circle-left {
+            position: absolute;
+            z-index: -10;
+            left: 0;
+            top: 324px;
+            transform: rotate(180deg);
+        }
+
+        .list {
+            position: relative;
+            cursor: pointer;
+            min-width: 300px;
+            height: 300px;
+            margin: 32px;
+            background: linear-gradient(179.9deg, rgba(42, 22, 85, 0) 57.57%, #2A1655 99.9%);
+            border-radius: 4px; 
+            // display: none;
+            
+            &:hover {
+                background: linear-gradient(180deg, rgba(42, 22, 85, 0.6) 0%, #2A1655 100%);
+                transition-duration: 1s;
+
+            }
+
+            img {
+                position: absolute;
+                max-width: 300px;
+                height: auto;
+                box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.05);
+                border-radius: 4px;
+                z-index: -1;
+            }
+
+            span {
+                position: absolute;
+                margin: 20px;
+                padding: 5px 15px;
+                border-radius: 50px;
+                color: $white;
+                right: 0px;
+                background-color: $red;
+            }
+
+            h2 {
+                position: absolute;
+                margin: 20px;
+                top: 200px;
+                color: $white;
+            }
+
+            p {
+                position: absolute;
+                top: 250px;
+                margin: 5px 20px;
+                color: $white;
+            }
+        }
+    }
+}
+
+@media (max-width: 400px) {
+
+    .content {
+        margin-top: 100px;
+        
+        .landing {
+            padding: 0px 40px;
+    
+            .identity {
+                display: flex;
+                flex-direction: column;
+    
+                h1 {
+                    font-size: 48px;
+                    color: $dark-purple;
+                }
+    
+                h2, h3, h4 {
+                    color: $dark-purple;
+                }
+    
+                p {
+                    max-width: 500px;
+                    font-weight: 450;
+                    font-size: 14px;
+                    color: $dark-purple;
+                    margin-bottom: 15px;
+                    line-height: 1.5rem;
+                
+                }
+                
+                .desc {
+                    max-width: 600px;
+                    color: grey;
+    
+                }
+    
+                a {
+                    // flex: 1 0 auto;
+                    // padding: 20px 40px;
+                    color: $red;
+                    font-weight: 500;
+                    border-radius: 4px;
+                    // background-color: $dark-purple;
+                }
+            }
+    
+            .img-landing {
+                img {
+                    height: 300px;
+                    width: auto;
+                    position: absolute;
+                    right: 0;
+                    top: 430px;
+                }
+            }
+        }
+    }
+}

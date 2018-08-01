@@ -1,0 +1,7 @@
+
+@mixin font-family($style, $font) {
+    font-family: $font;    
+    font-style: $style;
+    line-height: normal;
+    letter-spacing: 0.05em;
+}

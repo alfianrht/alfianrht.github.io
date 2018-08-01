@@ -1,0 +1,65 @@
+.parent {
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: auto;
+    width: 100%;
+    z-index: 10;
+    
+    .navbar {
+        padding: 0px 80px;
+        min-height: 100px;
+        align-items: center;
+        display: flex;
+        flex: 1;
+        background-color: $white;
+        // position: fixed;
+    
+        .brand {
+            
+            a {
+                font-weight: bold;
+                font-size: 1.5rem;
+                color: $red;
+            }
+        }
+    
+        .nav-item {
+            margin-left: auto;
+    
+            a {
+                margin: 10px;
+                font-weight: 500;
+                color: gray;
+
+                &[name="active"] {
+                    font-weight: 700;
+                    color: $dark-purple;
+                }
+            }
+        }
+    
+        img {
+            visibility: hidden;
+        }
+    }
+}
+
+@media (max-width: 400px) {
+
+    .parent {
+        position: fixed;
+        .navbar {
+            padding: 0px 40px;
+
+            .nav-item {
+                visibility: hidden;
+            }
+
+            img {
+                visibility: visible;
+            }
+        }
+    }
+
+}
