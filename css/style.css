@@ -32,10 +32,10 @@
       font-size: 1.5rem;
       color: #FF5549; }
     .parent .navbar .nav-item {
-      margin-left: auto;
-      margin-right: auto; }
+      margin-left: auto; }
       .parent .navbar .nav-item a {
-        margin: 10px; }
+        margin: 10px;
+        font-weight: 500; }
     .parent .navbar .nav-btn {
       padding: 15px 30px;
       color: #FFFFFF;
@@ -49,6 +49,16 @@
     height: 592px;
     display: flex;
     align-items: center; }
+    .content .landing[name="landing-page"] {
+      height: 400px; }
+      .content .landing[name="landing-page"] .identity {
+        align-content: center;
+        margin-right: auto;
+        margin-left: auto; }
+        .content .landing[name="landing-page"] .identity h1, .content .landing[name="landing-page"] .identity p {
+          margin: 40px 0px;
+          text-align: center;
+          align-content: center; }
     .content .landing .identity h1 {
       font-size: 64px;
       color: #2A1655; }
@@ -77,6 +87,8 @@
     padding: 0px 160px;
     align-self: center;
     justify-content: center; }
+    .content .all[name="landing-page"] {
+      margin: 20px 0px 160px 0px; }
     .content .all .circle-right {
       position: absolute;
       z-index: -10;
@@ -89,12 +101,41 @@
       top: 324px;
       transform: rotate(180deg); }
     .content .all .list {
+      position: relative;
+      cursor: pointer;
       min-width: 300px;
       height: 300px;
       margin: 32px;
-      background-color: #2A1655;
-      box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.05);
+      background: linear-gradient(180deg, rgba(42, 22, 85, 0.6) 0%, #2A1655 100%);
       border-radius: 4px; }
+      .content .all .list:hover {
+        background: linear-gradient(179.9deg, rgba(42, 22, 85, 0) 57.57%, #2A1655 99.9%);
+        transition-duration: 3s; }
+      .content .all .list img {
+        position: absolute;
+        max-width: 300px;
+        height: auto;
+        box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.05);
+        border-radius: 4px;
+        z-index: -1; }
+      .content .all .list span {
+        position: absolute;
+        margin: 20px;
+        padding: 5px 15px;
+        border-radius: 50px;
+        color: #FFFFFF;
+        right: 0px;
+        background-color: #FF5549; }
+      .content .all .list h2 {
+        position: absolute;
+        margin: 20px;
+        top: 200px;
+        color: #FFFFFF; }
+      .content .all .list p {
+        position: absolute;
+        top: 250px;
+        margin: 5px 20px;
+        color: #FFFFFF; }
 
 .footer {
   display: flex;
