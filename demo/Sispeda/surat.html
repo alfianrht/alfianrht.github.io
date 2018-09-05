@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pengajuan Surat | Admin</title>
+    <link rel="stylesheet" href="../assets/bootstrap/scss/bootstrap.css">
+    <link rel="stylesheet" href="../assets/css/custom.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+    <script src="//code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/dt/dt-1.10.18/datatables.min.css"/>
+    <script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+
+</head>
+<body>
+    <div class="main">
+        <div class="container-fluid p-0">
+            <div class="d-flex flex-row">
+                <div class="sidebar shadow bg-white h-100 position-fixed">
+                    <div class="d-flex flex-column">
+                        <div class="w-100 d-flex align-items-center">
+                            <img src="../assets/img/brand-icon-plc.png" alt="Brand Icon"  onclick="window.open('index.html','_self');">
+                            <p>SISPEDA</p>
+                            <i class="material-icons closenav">close</i>
+                        </div>
+                        <div href="#lll" class="d-flex align-items-center" onclick="window.open('index.html','_self');">
+                            <img src="../assets/img/icon-plc.svg" alt="Side Img">
+                            <span></span>
+                            <p class="align-middle">Beranda</p>
+                        </div>
+                        <div class="d-flex align-items-center"  onclick="window.open('user.html','_self');" >
+                            <img src="../assets/img/icon-plc.svg" alt="Side Img">
+                            <p>User</p>
+                            <a href="user-add.html" class="ml-auto rounded btn-side">+</a>
+                        </div>
+                        <div class="d-flex align-items-center" onclick="window.open('berita.html','_self');">
+                            <img src="../assets/img/icon-plc.svg" alt="Side Img">
+                            <p>Berita</p>
+                            <a href="berita-add.html" class="ml-auto rounded btn-side">+</a>
+                        </div>
+                        <div class="d-flex align-items-center" onclick="window.open('magang.html','_self');">
+                            <img src="../assets/img/icon-plc.svg" alt="Side Img">
+                            <p>Magang</p>
+                        </div>
+                        <div class="d-flex align-items-center" onclick="window.open('surat.html','_self');">
+                            <img src="../assets/img/icon-plc.svg" alt="Side Img">
+                            <p>Surat</p>
+                        </div>
+                        <div class="d-flex align-items-center" onclick="window.open('skripsi.html','_self');">
+                            <img src="../assets/img/icon-plc.svg" alt="Side Img">
+                            <p>Skripsi</p>
+                            <a class="ml-auto rounded btn-side">+</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md p-0 content">
+                    <nav class="navbar navbar-light bg-light shadow-sm m-0 bg-white py-3 navbar-admin">
+                        <i class="material-icons navshow" id="#navshow">menu</i>
+                        <span class="navbar-brand ml-auto "></span>
+                    </nav>
+                    <div class="d-flex flex-row tittle-btn align-items-center">
+                        <h4>User</h4>
+                        <button class="btn btn-secondary rounded ml-auto">+ Add User</button>
+                    </div>
+                    
+                    <div class="container-fluid px-4 table-list">
+                        <div class="table-responsive">
+                            <table id="example" class="table" cellspacing="10">
+                                <thead>
+                                    <tr>
+                                        <th>#</th>
+                                        <th>Nama</th>
+                                        <th>Username</th>
+                                        <th>Role</th>
+                                        <th>NIP</th>
+                                        <th>Email</th>
+                                        <th>Telfon</th>
+                                        <th>Tindakan</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>Alfian Rahmatullah</td>
+                                        <td>Alfian</td>
+                                        <td>Ketua Dept Negara</td>
+                                        <td>0110215066</td>
+                                        <td>alvianrht@gmail.com</td>
+                                        <td>085606442737</td>
+                                        <td class="h-100">
+                                            <div class="btn-group btn-smbtn-group-sm mx-auto h-100" role="group" aria-label="Basic example">
+                                                 <a href="#detele" class="btn btn-danger"><i  class="material-icons">delete</i></a>   
+                                                 <a href="#edit" class="btn btn-warning"><i  class="material-icons">edit</i></a>   
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                                <tfoot>
+                                    <tr>
+                                        <th>Name</th>
+                                        <th>Position</th>
+                                        <th>Office</th>
+                                        <th>Age</th>
+                                        <th>Start date</th>
+                                        <th>Salary</th>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="container-fluid footer bg-white py-3 fixed-bottom">
+                        <div class="d-flex align-content-center justify-content-end mr-3">
+                            <p>Copyright by <a href="#">Alfianrht</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        $(document).ready(function() {
+        $('#example').DataTable();
+        } );    
+    </script>
+    <script src="../assets/js/index.js"></script>
+</body>
+</html>

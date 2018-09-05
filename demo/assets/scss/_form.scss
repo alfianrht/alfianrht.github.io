@@ -1,0 +1,18 @@
+.form-group {
+    label {
+        font-weight: 600;
+        color: gray("600");
+    }
+}
+
+.form-control {
+    // height: 200px;
+    border: 0.5px solid rgba(229, 229, 229, 0.575);
+
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+   
+    &:focus {
+        border: 0.5px solid rgba(229, 229, 229, 0.575);
+        box-shadow: $box-shadow-lg;
+    }
+}

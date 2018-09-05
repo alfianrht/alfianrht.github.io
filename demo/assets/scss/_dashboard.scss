@@ -1,0 +1,90 @@
+// admin
+.title-dash {
+    margin: 24px 24px 0px 24px;
+    color: $blue-dark;
+    font-weight: bold;
+}
+
+.tittle-btn {
+    padding: 24px;
+
+    h4 {
+        color: $blue-dark;
+    }
+
+    p {
+        margin-left: 24px;
+        color: gray("500");
+    }
+    
+}
+
+.board-list {
+
+    div {
+
+        a {
+            text-decoration: none;
+            color: gray("500");
+            transition: 0.3s;
+
+            &:hover {
+                box-shadow: $box-shadow-lg !important;
+            }
+
+            div {
+                
+                h3 {
+                    font-weight: 500;
+                    color: $blue-dark;
+                }
+
+                img {
+                    height: 32px;
+                    width: 32px;
+                }
+            }
+        }
+    }
+}
+
+.post-list {
+
+    margin-bottom: 80px;
+
+    h6 {
+        color: gray("600");
+    }
+
+    .post {
+        position: relative;
+
+        h6 {
+            color: $blue-dark;
+        }
+
+        a {
+            position: absolute;
+            right: 24px;
+            bottom: 24px;
+            color: #FFF;
+        }
+
+        p {
+            color: gray("600");
+            margin: 0px;
+
+            em {
+                font-weight: 200;
+                font-size: 14px;
+                color: gray("600");
+            }
+        }
+    }
+}
+
+.form-list {
+    margin: 0px 24px;
+    padding: 24px;
+    margin-bottom: 80px;
+}
