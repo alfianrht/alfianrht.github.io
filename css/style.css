@@ -148,6 +148,14 @@
         color: #FFFFFF;
         right: 0px;
         background-color: #FF5549; }
+      .content .all .list .span2 {
+        position: absolute;
+        margin: 20px;
+        padding: 5px 15px;
+        border-radius: 50px;
+        color: #FFFFFF;
+        right: 85px;
+        background-color: rgb(18, 184, 0); }
       .content .all .list h2 {
         position: absolute;
         margin: 20px;
